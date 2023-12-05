@@ -1,0 +1,735 @@
+Error occurred at 2023-9-27 16:44:30 
+ Error: Error: Can't add new command when connection is in closed state
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\utils\LogError.ts:5:17)
+    at AnswerService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\AnswerService.ts:106:21)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\AnswerService.ts:29:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-9-27 16:44:56 
+ Error: Error: Can't add new command when connection is in closed state
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\utils\LogError.ts:5:17)
+    at AnswerService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\AnswerService.ts:106:21)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\AnswerService.ts:29:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-9-29 18:55:26 
+ Error: Error: Table 'news.user' doesn't exist
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\utils\LogError.ts:5:17)
+    at UserService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\UserService.ts:60:21)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\UserService.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-9-29 18:55:48 
+ Error: Error: Table 'news.user' doesn't exist
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\utils\LogError.ts:5:17)
+    at UserService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\UserService.ts:61:21)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\UserService.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-9-29 18:56:14 
+ Error: Error: Table 'news.user' doesn't exist
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\utils\LogError.ts:5:17)
+    at UserService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\UserService.ts:61:21)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\UserService.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-9-29 18:58:37 
+ Error: Error: Table 'news.user' doesn't exist
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\utils\LogError.ts:5:17)
+    at UserService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\UserService.ts:61:21)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\UserService.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-9-29 18:59:3 
+ Error: Error: Table 'news.user' doesn't exist
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\utils\LogError.ts:5:17)
+    at UserService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\UserService.ts:61:21)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\UserService.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-9-29 18:59:31 
+ Error: Error: Table 'news.user' doesn't exist
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\utils\LogError.ts:5:17)
+    at UserService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\UserService.ts:61:21)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\UserService.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-9-29 19:59:16 
+ Error: Error: Table 'news.user' doesn't exist
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\utils\LogError.ts:5:17)
+    at UserService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\UserService.ts:60:21)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\UserService.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-9-29 19:59:34 
+ Error: Error: Table 'news.user' doesn't exist
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\utils\LogError.ts:5:17)
+    at UserService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\UserService.ts:61:21)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\UserService.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-9-29 20:2:30 
+ Error: Error: Table 'news.user' doesn't exist
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\utils\LogError.ts:5:17)
+    at UserService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\UserService.ts:61:21)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\UserService.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-9-29 20:2:34 
+ Error: Error: Table 'news.user' doesn't exist
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\utils\LogError.ts:5:17)
+    at UserService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\UserService.ts:61:21)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\UserService.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-9-29 20:3:41 
+ Error: Error: Table 'news.user' doesn't exist
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\utils\LogError.ts:5:17)
+    at UserService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\UserService.ts:61:21)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\UserService.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-9-29 20:9:34 
+ Error: Error: Table 'news.user' doesn't exist
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\utils\LogError.ts:5:17)
+    at UserService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\UserService.ts:61:21)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\UserService.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-10-2 15:43:5 
+ Error: Error: Table 'news.user' doesn't exist
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\utils\LogError.ts:5:17)
+    at UserService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\UserService.ts:61:21)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\UserService.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-10-3 14:45:0 
+ Error: Error: Unknown column 'NaN' in 'where clause'
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\utils\LogError.ts:5:17)
+    at CommentService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\CommentService.ts:88:21)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\CommentService.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-10-3 14:45:24 
+ Error: Error: Unknown column 'NaN' in 'where clause'
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\utils\LogError.ts:5:17)
+    at CommentService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\CommentService.ts:89:21)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\CommentService.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-10-16 14:7:43 
+ Error: Error: Truncated incorrect DOUBLE value: 'undefined'
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\utils\LogError.ts:5:17)
+    at NewsService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\NewsService.ts:144:21)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\NewsService.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-10-16 14:8:0 
+ Error: Error: Truncated incorrect DOUBLE value: 'undefined'
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\utils\LogError.ts:5:17)
+    at NewsService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\NewsService.ts:144:21)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\NewsService.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-10-17 12:55:49 
+ Error: TypeError: Cannot read properties of undefined (reading 'parentId')
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\utils\LogError.ts:5:17)
+    at CategoryService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\CategoryService.ts:120:21)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\CategoryService.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-10-17 12:56:1 
+ Error: TypeError: Cannot read properties of undefined (reading 'parentId')
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\utils\LogError.ts:5:17)
+    at CategoryService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\CategoryService.ts:120:21)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\CategoryService.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-10-17 16:38:8 
+ Error: Error: Truncated incorrect DOUBLE value: 'undefined'
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\utils\LogError.ts:5:17)
+    at NewsService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\NewsService.ts:144:21)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\NewsService.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-10-17 16:39:21 
+ Error: Error: Truncated incorrect DOUBLE value: 'undefined'
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\utils\LogError.ts:5:17)
+    at NewsService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\NewsService.ts:144:21)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\NewsService.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-10-20 15:8:15 
+ Error: Error: connect ECONNREFUSED ::1:3306
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\utils\LogError.ts:5:17)
+    at CategoryService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\CategoryService.ts:77:21)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\CategoryService.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-10-20 15:8:15 
+ Error: Error: connect ECONNREFUSED ::1:3306
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\utils\LogError.ts:5:17)
+    at UserService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\UserService.ts:226:21)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\UserService.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-10-20 15:8:15 
+ Error: Error: connect ECONNREFUSED ::1:3306
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\utils\LogError.ts:5:17)
+    at CategoryService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\CategoryService.ts:77:21)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\CategoryService.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-10-20 15:8:15 
+ Error: Error: connect ECONNREFUSED ::1:3306
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\utils\LogError.ts:5:17)
+    at UserService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\UserService.ts:226:21)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\UserService.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-11-13 20:43:23 
+ Error: Error: Truncated incorrect DOUBLE value: 'Nova versão do Scania bicudo está quase pronta na Noruega'
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\utils\LogError.ts:5:17)
+    at NewsService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\NewsService.ts:144:21)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\NewsService.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-11-13 20:43:23 
+ Error: Error: Truncated incorrect DOUBLE value: 'Nova versão do Scania bicudo está quase pronta na Noruega'
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\utils\LogError.ts:5:17)
+    at NewsService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\NewsService.ts:144:21)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\NewsService.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-11-13 20:43:24 
+ Error: Error: Truncated incorrect DOUBLE value: 'Nova versão do Scania bicudo está quase pronta na Noruega'
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\utils\LogError.ts:5:17)
+    at NewsService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\NewsService.ts:144:21)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\NewsService.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-11-13 20:43:24 
+ Error: Error: Truncated incorrect DOUBLE value: 'Nova versão do Scania bicudo está quase pronta na Noruega'
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\utils\LogError.ts:5:17)
+    at NewsService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\NewsService.ts:144:21)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\NewsService.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-11-13 20:43:40 
+ Error: Error: Truncated incorrect DOUBLE value: 'Nova versão do Scania bicudo está quase pronta na Noruega'
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\utils\LogError.ts:5:17)
+    at NewsService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\NewsService.ts:144:21)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\NewsService.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-11-13 20:43:40 
+ Error: Error: Truncated incorrect DOUBLE value: 'Nova versão do Scania bicudo está quase pronta na Noruega'
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\utils\LogError.ts:5:17)
+    at NewsService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\NewsService.ts:144:21)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\NewsService.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-11-17 16:28:41 
+ Error: Error: connect ECONNREFUSED ::1:3306
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\utils\LogError.ts:5:17)
+    at NewsService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\NewsService.ts:107:21)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\NewsService.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-11-17 16:28:42 
+ Error: Error: connect ECONNREFUSED ::1:3306
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\utils\LogError.ts:5:17)
+    at NewsService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\NewsService.ts:107:21)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\NewsService.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-11-17 17:6:15 
+ Error: Error: Unknown column 'NaN' in 'where clause'
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\utils\LogError.ts:5:17)
+    at CommentService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\CommentService.ts:88:21)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\CommentService.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-11-17 17:7:15 
+ Error: Error: Unknown column 'NaN' in 'where clause'
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\utils\LogError.ts:5:17)
+    at CommentService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\CommentService.ts:88:21)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\CommentService.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-11-17 17:8:23 
+ Error: Error: Column 'id' in field list is ambiguous
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\utils\LogError.ts:5:17)
+    at NewsService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\NewsService.ts:144:21)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\NewsService.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-11-17 17:8:24 
+ Error: Error: Column 'id' in field list is ambiguous
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\utils\LogError.ts:5:17)
+    at NewsService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\NewsService.ts:144:21)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\NewsService.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-11-17 17:8:24 
+ Error: Error: Column 'id' in field list is ambiguous
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\utils\LogError.ts:5:17)
+    at NewsService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\NewsService.ts:144:21)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\NewsService.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-11-17 17:8:25 
+ Error: Error: Column 'id' in field list is ambiguous
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\utils\LogError.ts:5:17)
+    at NewsService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\NewsService.ts:144:21)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\NewsService.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-11-17 17:8:34 
+ Error: Error: Column 'id' in field list is ambiguous
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\utils\LogError.ts:5:17)
+    at NewsService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\NewsService.ts:144:21)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\NewsService.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-11-17 17:8:34 
+ Error: Error: Column 'id' in field list is ambiguous
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\utils\LogError.ts:5:17)
+    at NewsService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\NewsService.ts:144:21)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\restAPI\src\model\service\NewsService.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-11-20 16:21:34 
+ Error: TypeError: Cannot read properties of undefined (reading 'id')
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\utils\LogError.ts:5:17)
+    at NewsService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\NewsService.ts:30:21)
+    at Generator.next (<anonymous>)
+    at C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\NewsService.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\NewsService.ts:4:12)
+    at NewsService.save (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\NewsService.ts:29:16)
+    at NewsController.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\controller\NewsController.ts:21:43)
+    at Generator.next (<anonymous>)
+    at C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\controller\NewsController.ts:8:71 
+ ------------------- 
+Error occurred at 2023-11-20 16:22:6 
+ Error: TypeError: Cannot read properties of undefined (reading 'id')
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\utils\LogError.ts:5:17)
+    at NewsService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\NewsService.ts:30:21)
+    at Generator.next (<anonymous>)
+    at C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\NewsService.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\NewsService.ts:4:12)
+    at NewsService.save (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\NewsService.ts:29:16)
+    at NewsController.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\controller\NewsController.ts:21:43)
+    at Generator.next (<anonymous>)
+    at C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\controller\NewsController.ts:8:71 
+ ------------------- 
+Error occurred at 2023-11-21 9:32:41 
+ Error: Error: connect ECONNREFUSED ::1:3306
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\utils\LogError.ts:5:17)
+    at NewsService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\NewsService.ts:110:21)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\NewsService.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-11-21 10:24:58 
+ Error: Error: Table 'news.new' doesn't exist
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\utils\LogError.ts:5:17)
+    at NewsService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\NewsService.ts:51:21)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\NewsService.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-11-21 10:26:33 
+ Error: Error: Table 'news.new' doesn't exist
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\utils\LogError.ts:5:17)
+    at NewsService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\NewsService.ts:51:21)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\NewsService.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-11-21 10:27:47 
+ Error: Error: Table 'news.new' doesn't exist
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\utils\LogError.ts:5:17)
+    at NewsService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\NewsService.ts:51:21)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\NewsService.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-11-21 10:28:10 
+ Error: Error: Table 'news.new' doesn't exist
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\utils\LogError.ts:5:17)
+    at NewsService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\NewsService.ts:51:21)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\NewsService.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-11-21 10:28:33 
+ Error: Error: Table 'news.new' doesn't exist
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\utils\LogError.ts:5:17)
+    at NewsService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\NewsService.ts:51:21)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\NewsService.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-11-21 11:21:6 
+ Error: Error: Table 'news.categoy' doesn't exist
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\utils\LogError.ts:5:17)
+    at CategoryService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\CategoryService.ts:113:21)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\CategoryService.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-11-21 15:19:3 
+ Error: Error: Field 'join_in_time' doesn't have a default value
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\utils\LogError.ts:5:17)
+    at UserService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\UserService.ts:37:21)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\UserService.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-11-21 15:19:30 
+ Error: Error: Field 'join_in_time' doesn't have a default value
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\utils\LogError.ts:5:17)
+    at UserService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\UserService.ts:38:21)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\UserService.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-11-21 15:21:3 
+ Error: Error: Field 'join_in_time' doesn't have a default value
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\utils\LogError.ts:5:17)
+    at UserService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\UserService.ts:38:21)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\UserService.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-11-21 15:51:54 
+ Error: Error: Table 'news.categor' doesn't exist
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\utils\LogError.ts:5:17)
+    at CategoryService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\CategoryService.ts:58:21)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\CategoryService.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-11-21 15:52:28 
+ Error: Error: Table 'news.categor' doesn't exist
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\utils\LogError.ts:5:17)
+    at CategoryService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\CategoryService.ts:58:21)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\CategoryService.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-11-21 15:53:20 
+ Error: Error: Table 'news.categor' doesn't exist
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\utils\LogError.ts:5:17)
+    at CategoryService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\CategoryService.ts:58:21)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\CategoryService.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-11-21 15:53:38 
+ Error: Error: Table 'news.categor' doesn't exist
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\utils\LogError.ts:5:17)
+    at CategoryService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\CategoryService.ts:58:21)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\CategoryService.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-11-22 11:14:56 
+ Error: Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'answers.datePosted,
+                    answers.agree_count as agreeCount, answe' at line 4
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\utils\LogError.ts:5:17)
+    at CommentService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\CommentService.ts:111:21)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\CommentService.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-11-22 11:15:3 
+ Error: Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'answers.datePosted,
+                    answers.agree_count as agreeCount, answe' at line 4
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\utils\LogError.ts:5:17)
+    at CommentService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\CommentService.ts:111:21)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\CommentService.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-11-22 11:15:8 
+ Error: Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'answers.datePosted,
+                    answers.agree_count as agreeCount, answe' at line 4
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\utils\LogError.ts:5:17)
+    at CommentService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\CommentService.ts:111:21)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\CommentService.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-11-22 11:15:25 
+ Error: Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'answers.datePosted,
+                    answers.agree_count as agreeCount, answe' at line 4
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\utils\LogError.ts:5:17)
+    at CommentService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\CommentService.ts:112:21)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\CommentService.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-11-22 11:15:48 
+ Error: Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'author
+                WHERE comment_id = (SELECT comment_id FROM news WHERE id ' at line 8
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\utils\LogError.ts:5:17)
+    at CommentService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\CommentService.ts:112:21)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\CommentService.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-11-22 11:16:6 
+ Error: Error: Unknown column 'answers.datePosted' in 'field list'
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\utils\LogError.ts:5:17)
+    at CommentService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\CommentService.ts:112:21)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\CommentService.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-11-22 11:16:8 
+ Error: Error: Unknown column 'answers.datePosted' in 'field list'
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\utils\LogError.ts:5:17)
+    at CommentService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\CommentService.ts:112:21)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\CommentService.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-11-29 14:7:31 
+ Error: Error: connect ECONNREFUSED ::1:3306
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\build\src\model\utils\LogError.js:9:17)
+    at NewsService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\build\src\model\service\NewsService.js:115:40)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\build\src\model\service\NewsService.js:6:65)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-11-29 14:7:31 
+ Error: Error: connect ECONNREFUSED ::1:3306
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\build\src\model\utils\LogError.js:9:17)
+    at CategoryService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\build\src\model\service\CategoryService.js:89:40)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\build\src\model\service\CategoryService.js:6:65)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-11-29 14:7:31 
+ Error: Error: connect ECONNREFUSED ::1:3306
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\build\src\model\utils\LogError.js:9:17)
+    at UserService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\build\src\model\service\UserService.js:230:40)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\build\src\model\service\UserService.js:6:65)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-11-29 14:7:33 
+ Error: Error: connect ECONNREFUSED ::1:3306
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\build\src\model\utils\LogError.js:9:17)
+    at NewsService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\build\src\model\service\NewsService.js:115:40)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\build\src\model\service\NewsService.js:6:65)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-11-29 14:27:39 
+ Error: Error: Column count doesn't match value count at row 1
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\utils\LogError.ts:5:17)
+    at NotificationService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\NotificationService.ts:90:21)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\NotificationService.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-11-29 14:27:39 
+ Error: Error: Column count doesn't match value count at row 1
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\utils\LogError.ts:5:17)
+    at ReactionService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\ReactionService.ts:124:21)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\ReactionService.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-11-29 14:29:9 
+ Error: Error: Column count doesn't match value count at row 1
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\utils\LogError.ts:5:17)
+    at NotificationService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\NotificationService.ts:90:21)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\NotificationService.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-11-29 14:29:9 
+ Error: Error: Column count doesn't match value count at row 1
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\utils\LogError.ts:5:17)
+    at ReactionService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\ReactionService.ts:125:21)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\ReactionService.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-11-29 14:30:12 
+ Error: Error: Cannot add or update a child row: a foreign key constraint fails (`news`.`user_notification`, CONSTRAINT `user_notification_ibfk_3` FOREIGN KEY (`news_origen`) REFERENCES `news` (`id`))
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\utils\LogError.ts:5:17)
+    at NotificationService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\NotificationService.ts:90:21)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\NotificationService.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-11-29 14:30:12 
+ Error: Error: Cannot add or update a child row: a foreign key constraint fails (`news`.`user_notification`, CONSTRAINT `user_notification_ibfk_3` FOREIGN KEY (`news_origen`) REFERENCES `news` (`id`))
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\utils\LogError.ts:5:17)
+    at ReactionService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\ReactionService.ts:125:21)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\ReactionService.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-11-29 14:33:25 
+ Error: Error: Cannot add or update a child row: a foreign key constraint fails (`news`.`user_notification`, CONSTRAINT `user_notification_ibfk_3` FOREIGN KEY (`news_origen`) REFERENCES `news` (`id`))
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\utils\LogError.ts:5:17)
+    at NotificationService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\NotificationService.ts:90:21)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\NotificationService.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-11-29 14:33:25 
+ Error: Error: Cannot add or update a child row: a foreign key constraint fails (`news`.`user_notification`, CONSTRAINT `user_notification_ibfk_3` FOREIGN KEY (`news_origen`) REFERENCES `news` (`id`))
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\utils\LogError.ts:5:17)
+    at ReactionService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\ReactionService.ts:125:21)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\ReactionService.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-11-29 14:33:59 
+ Error: Error: Cannot add or update a child row: a foreign key constraint fails (`news`.`user_notification`, CONSTRAINT `user_notification_ibfk_3` FOREIGN KEY (`news_origen`) REFERENCES `news` (`id`))
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\utils\LogError.ts:5:17)
+    at NotificationService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\NotificationService.ts:90:21)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\NotificationService.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-11-29 14:33:59 
+ Error: Error: Cannot add or update a child row: a foreign key constraint fails (`news`.`user_notification`, CONSTRAINT `user_notification_ibfk_3` FOREIGN KEY (`news_origen`) REFERENCES `news` (`id`))
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\utils\LogError.ts:5:17)
+    at ReactionService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\ReactionService.ts:125:21)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\ReactionService.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-11-29 14:35:55 
+ Error: Error: Cannot add or update a child row: a foreign key constraint fails (`news`.`user_notification`, CONSTRAINT `user_notification_ibfk_3` FOREIGN KEY (`news_origen`) REFERENCES `news` (`id`))
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\utils\LogError.ts:5:17)
+    at NotificationService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\NotificationService.ts:90:21)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\NotificationService.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-11-29 14:35:55 
+ Error: Error: Cannot add or update a child row: a foreign key constraint fails (`news`.`user_notification`, CONSTRAINT `user_notification_ibfk_3` FOREIGN KEY (`news_origen`) REFERENCES `news` (`id`))
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\utils\LogError.ts:5:17)
+    at ReactionService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\ReactionService.ts:125:21)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\ReactionService.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-11-29 14:36:24 
+ Error: Error: Cannot add or update a child row: a foreign key constraint fails (`news`.`user_notification`, CONSTRAINT `user_notification_ibfk_3` FOREIGN KEY (`news_origen`) REFERENCES `news` (`id`))
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\utils\LogError.ts:5:17)
+    at NotificationService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\NotificationService.ts:90:21)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\NotificationService.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-11-29 14:36:24 
+ Error: Error: Cannot add or update a child row: a foreign key constraint fails (`news`.`user_notification`, CONSTRAINT `user_notification_ibfk_3` FOREIGN KEY (`news_origen`) REFERENCES `news` (`id`))
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\utils\LogError.ts:5:17)
+    at ReactionService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\ReactionService.ts:125:21)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\ReactionService.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-11-29 14:37:33 
+ Error: Error: Cannot add or update a child row: a foreign key constraint fails (`news`.`user_notification`, CONSTRAINT `user_notification_ibfk_3` FOREIGN KEY (`news_origen`) REFERENCES `news` (`id`))
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\utils\LogError.ts:5:17)
+    at NotificationService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\NotificationService.ts:90:21)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\NotificationService.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-11-29 14:37:33 
+ Error: Error: Cannot add or update a child row: a foreign key constraint fails (`news`.`user_notification`, CONSTRAINT `user_notification_ibfk_3` FOREIGN KEY (`news_origen`) REFERENCES `news` (`id`))
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\utils\LogError.ts:5:17)
+    at ReactionService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\ReactionService.ts:125:21)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\ReactionService.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-11-29 17:1:14 
+ Error: Error: Column count doesn't match value count at row 1
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\utils\LogError.ts:5:17)
+    at NotificationService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\NotificationService.ts:101:21)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\NotificationService.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-11-29 17:1:14 
+ Error: Error: Column count doesn't match value count at row 1
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\utils\LogError.ts:5:17)
+    at AnswerService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\AnswerService.ts:62:21)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\AnswerService.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-11-29 17:1:33 
+ Error: Error: Column count doesn't match value count at row 1
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\utils\LogError.ts:5:17)
+    at NotificationService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\NotificationService.ts:101:21)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\NotificationService.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 
+Error occurred at 2023-11-29 17:1:33 
+ Error: Error: Column count doesn't match value count at row 1
+    at LogError (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\utils\LogError.ts:5:17)
+    at AnswerService.<anonymous> (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\AnswerService.ts:63:21)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\joseh\OneDrive\Documentos\Programming\Own\noticias\web_service\src\model\service\AnswerService.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+ ------------------- 

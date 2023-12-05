@@ -1,0 +1,8 @@
+/node_modules
+
+/.env
+
+/src/errorlogs.txt
+/src/siteConfig.json
+
+/build
