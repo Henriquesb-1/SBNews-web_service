@@ -2,7 +2,6 @@ import Comment from "../entities/Comment";
 import CommentRepository from "../repository/CommentRepository";
 import Connection from "../utils/Connection";
 import renderDate from "../utils/parseDate";
-import LogError from "../utils/LogError";
 
 export default class CommentService implements CommentRepository {
 
@@ -29,7 +28,6 @@ export default class CommentService implements CommentRepository {
                 throw error;
             }
         } catch (error) {
-            LogError(error, "model");
             throw error;
         }
     }
@@ -52,7 +50,6 @@ export default class CommentService implements CommentRepository {
                 throw error;
             }
         } catch (error) {
-            LogError(error, "model");
             throw error;
         }
     }
@@ -85,7 +82,6 @@ export default class CommentService implements CommentRepository {
 
             return { data: comments };
         } catch (error) {
-            LogError(error, "model");
             throw error;
         }
     }
@@ -97,7 +93,6 @@ export default class CommentService implements CommentRepository {
             await connection.query(`DELETE FROM comments WHERE id = ?`, [id]);
             await connection.closeConnection();
         } catch (error) {
-            LogError(error, "model");
             throw error;
         }
     }

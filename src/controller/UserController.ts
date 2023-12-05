@@ -25,7 +25,7 @@ export default class UserController {
             const { data, pages, total } = await this.userRepository.get(page, { type, onlyMuteds, onlyBanned, userName });
             res.status(200).json({ data, pages, total });
         } catch (error) {
-            LogError(error, "controller");
+            LogError(error);
             res.status(500).send();
         }
     }
@@ -35,7 +35,7 @@ export default class UserController {
             const data = await this.userRepository.getNewsAuthors();
             res.status(200).json(data);
         } catch (error) {
-            LogError(error, "controller");
+            LogError(error);
             res.status(500).send();
         }
     }
@@ -73,7 +73,7 @@ export default class UserController {
             const updateUserAndReceiveFeedback = await this.userRepository.update(user);
             res.status(200).send(updateUserAndReceiveFeedback);
         } catch (error) {
-            LogError(error, "controller");
+            LogError(error);
             res.status(500).send();
         }
     }
@@ -102,7 +102,7 @@ export default class UserController {
 
             return res.status(204).send();
         } catch (error) {
-            LogError(error, "controller");
+            LogError(error);
             return res.status(500).send();
         }
     }
@@ -123,7 +123,7 @@ export default class UserController {
 
             return res.status(200).send(token);
         } catch (error) {
-            LogError(error, "controller");
+            LogError(error);
             return res.status(500).send();
         }
     }
@@ -148,7 +148,7 @@ export default class UserController {
             const { user, commentsAgree, answersAgree } = await this.userRepository.getUserProfile(name);
             res.status(200).json({ user, commentsAgree, answersAgree });
         } catch (error) {
-            LogError(error, "controller");
+            LogError(error);
             res.status(500).send();
         }
     }

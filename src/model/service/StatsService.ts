@@ -1,7 +1,6 @@
 import News from "../entities/News";
 import StatsRepository from "../repository/StatsRepository";
 import Connection from "../utils/Connection";
-import LogError from "../utils/LogError";
 
 export default class StatsService implements StatsRepository {
 
@@ -35,7 +34,6 @@ export default class StatsService implements StatsRepository {
                 banned: totalBanned
             }
         } catch (error) {
-            LogError(error, "model");
             throw error;
         }
     }

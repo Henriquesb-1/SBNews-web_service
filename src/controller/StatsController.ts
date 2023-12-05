@@ -12,7 +12,7 @@ export default class StatsController {
             const { users, banned, muteds } = await this.statsRepository.getTotalUsers();
             res.status(200).json({ users, banned, muteds });
         } catch (error) {
-            LogError(error, "controller");
+            LogError(error);
             res.status(500).send();
         }
     }

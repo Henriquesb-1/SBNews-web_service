@@ -20,7 +20,7 @@ export default class ReactionController {
             const commentAlreadyReacted = await this.reactionRepository.getCommentAlreadyReacted(userId, type);
             res.status(200).json(commentAlreadyReacted);
         } catch (error) {
-            LogError(error, "controller");
+            LogError(error);
             res.status(500).send();
         }
     }
@@ -44,7 +44,7 @@ export default class ReactionController {
             
             res.status(204).send();
         } catch (error) {
-            LogError(error, "controller");
+            LogError(error);
             res.status(500).send();
         }
     }

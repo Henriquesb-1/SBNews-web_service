@@ -4,7 +4,6 @@ import News from "../entities/News";
 import getNecessariesPages from "../utils/Paginator";
 import renderDate from "../utils/parseDate";
 import { NewsReturnTypes } from "../Types";
-import LogError from "../utils/LogError";
 
 export default class NewsService implements NewsRepository {
 
@@ -27,7 +26,6 @@ export default class NewsService implements NewsRepository {
 
             await connection.closeConnection();
         } catch (error) {
-            LogError(error, "model");
             console.log(error)
             throw error;
         }
@@ -48,7 +46,6 @@ export default class NewsService implements NewsRepository {
             await connection.closeConnection();
         } catch (error) {
             console.log(error);
-            LogError(error, "model");
             throw error;
         }
     }
@@ -72,7 +69,6 @@ export default class NewsService implements NewsRepository {
 
             await connection.closeConnection();
         } catch (error) {
-            LogError(error, "model");
             throw error;
         }
     }
@@ -108,7 +104,6 @@ export default class NewsService implements NewsRepository {
                 total
             };
         } catch (error) {
-            LogError(error, "model");
             throw error;
         }
     }
@@ -145,7 +140,6 @@ export default class NewsService implements NewsRepository {
 
             return news;
         } catch (error) {
-            LogError(error, "model");
             throw error;
         }
     }
@@ -183,7 +177,6 @@ export default class NewsService implements NewsRepository {
                 pages
             }
         } catch (error) {
-            LogError(error, "model");
             throw error;
         };
     }
@@ -243,7 +236,6 @@ export default class NewsService implements NewsRepository {
                 throw new Error("No news founded");
             }
         } catch (error) {
-            LogError(error, "model");
             throw error;
         };
     }
@@ -264,7 +256,6 @@ export default class NewsService implements NewsRepository {
 
             return topNews;
         } catch (error) {
-            LogError(error, "model");
             throw error;
         }
     }
@@ -291,7 +282,6 @@ export default class NewsService implements NewsRepository {
 
             return relatedNews;
         } catch (error) {
-            LogError(error, "model");
             throw error;
         }
     }
@@ -326,7 +316,6 @@ export default class NewsService implements NewsRepository {
                 total
             }
         } catch (error) {
-            LogError(error, "model");
             throw error;
         }
     }

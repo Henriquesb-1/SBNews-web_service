@@ -2,7 +2,6 @@ import User from "../entities/User";
 import UserBuilder from "../entities/builders/UserBuilder";
 import UserRepository from "../repository/UserRepository";
 import Connection from "../utils/Connection";
-import LogError from "../utils/LogError";
 import getNecessariesPages from "../utils/Paginator";
 import renderDate from "../utils/parseDate";
 
@@ -36,7 +35,6 @@ export default class UserService implements UserRepository {
             await connection.closeConnection();
         } catch (error) {
             console.log(error)
-            LogError(error, "model");
             throw error;
         }
     }
@@ -65,7 +63,6 @@ export default class UserService implements UserRepository {
             return userModel.feedBack;
         } catch (error) {
             console.log(error);
-            LogError(error, "model");
             throw error;
         }
     }
@@ -92,7 +89,6 @@ export default class UserService implements UserRepository {
 
             await connection.closeConnection();
         } catch (error) {
-            LogError(error, "model");
             throw error;
         }
     }
@@ -104,7 +100,6 @@ export default class UserService implements UserRepository {
             const userFromDb = <User[]>await connection.query("SELECT name FROM users WHERE name = ?", [name]);
             return userFromDb.length > 0;
         } catch (error) {
-            LogError(error, "model");
             throw error;
         }
     }
@@ -124,7 +119,6 @@ export default class UserService implements UserRepository {
             const [user] = userFromDb.map((user: User) => user);
             return user;
         } catch (error) {
-            LogError(error, "model");
             throw error;
         }
     }
@@ -168,7 +162,6 @@ export default class UserService implements UserRepository {
                 pages
             }
         } catch (error) {
-            LogError(error, "model");
             throw error;
         }
     }
@@ -211,7 +204,6 @@ export default class UserService implements UserRepository {
                 answersAgree
             };
         } catch (error) {
-            LogError(error, "model");
             throw error;
         }
     }
@@ -230,7 +222,6 @@ export default class UserService implements UserRepository {
 
             return data;
         } catch (error) {
-            LogError(error, "model");
             throw error;
         }
     }
@@ -255,7 +246,6 @@ export default class UserService implements UserRepository {
 
             return password;
         } catch (error) {
-            LogError(error, "model");
             throw error;
         }
     }

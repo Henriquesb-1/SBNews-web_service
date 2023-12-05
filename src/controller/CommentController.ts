@@ -25,7 +25,7 @@ export default class CommentController {
                 res.status(204).send();
             }
         } catch (error) {
-            LogError(error, "controller");
+            LogError(error);
             res.status(500).send();
         }
     }
@@ -38,7 +38,7 @@ export default class CommentController {
             const { data } = await this.commentRepository.get(page, newsId);
             res.status(200).json(data);
         } catch (error) {
-            LogError(error, "controller");
+            LogError(error);
             res.status(500).send();
         }
     }
@@ -50,7 +50,7 @@ export default class CommentController {
             await this.commentRepository.delete(commentId);
             res.status(204).send();
         } catch (error) {
-            LogError(error, "controller");
+            LogError(error);
             res.status(500).send();
         }
     }

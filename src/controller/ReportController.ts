@@ -20,7 +20,7 @@ export default class ReportController {
             const { data, pages, total } = await this.reportRepository.get(page, type);
             res.status(200).json({ data, pages, total });
         } catch (error) {
-            LogError(error, "controller")
+            LogError(error)
             res.status(500).send();
         }
     }
@@ -51,7 +51,7 @@ export default class ReportController {
             const feedBack = await this.reportRepository.handleReport(report, willDeleteContent, willPunishAuthor);
             res.status(200).send(feedBack);
         } catch (error) {
-            LogError(error, "controller");
+            LogError(error);
             res.status(500).send();
         }
     }

@@ -27,7 +27,7 @@ export default class AnswerController {
                 res.status(204).send();
             }
         } catch (error) {
-            LogError(error, "controller");
+            LogError(error);
             res.status(500).send(error);
         }
     }
@@ -51,7 +51,7 @@ export default class AnswerController {
             await this.answerRepository.delete(answerId);
             res.status(204).send();
         } catch (error) {
-            LogError(error, "controller");
+            LogError(error);
             res.status(500).send();
         }
     }

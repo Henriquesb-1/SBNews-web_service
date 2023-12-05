@@ -20,7 +20,7 @@ export default class NotificationController {
             const { data, pages, total } = await this.notificationRepository.get(page, userId);
             res.status(200).json({ data, pages, total });
         } catch (error) {
-            LogError(error, "controller");
+            LogError(error);
             res.status(500).send();
         }
     }
@@ -44,7 +44,7 @@ export default class NotificationController {
             await this.notificationRepository.save(notification);
             res.status(204).send();
         } catch (error) {
-            LogError(error, "controller");
+            LogError(error);
             res.status(500).send();
         }
     }
@@ -56,7 +56,7 @@ export default class NotificationController {
             await this.notificationRepository.update(notification);
             res.status(204).send();
         } catch (error) {
-            LogError(error, "controller");
+            LogError(error);
             res.status(500).send();
         }
     }
@@ -68,7 +68,7 @@ export default class NotificationController {
             await this.notificationRepository.delete(notificationId);
             res.status(204).send();
         } catch (error) {
-            LogError(error, "controller");
+            LogError(error);
             res.status(500).send();
         }
     }

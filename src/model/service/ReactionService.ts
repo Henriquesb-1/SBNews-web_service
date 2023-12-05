@@ -3,7 +3,6 @@ import Reaction from "../entities/Reaction";
 import NotificationRepository from "../repository/NotificationRepository";
 import ReactionRepository from "../repository/ReactionRepository";
 import Connection from "../utils/Connection";
-import LogError from "../utils/LogError";
 import NotificationService from "./NotificationService";
 
 export default class ReactionService implements ReactionRepository {
@@ -61,7 +60,6 @@ export default class ReactionService implements ReactionRepository {
 
             return commentsAlreadyReacted;
         } catch (error) {
-            LogError(error, "model");
             throw error;
         };
     }
@@ -125,7 +123,6 @@ export default class ReactionService implements ReactionRepository {
             }
             await connection.closeConnection();
         } catch (error) {
-            LogError(error, "model");
             throw error;
         }
     }
@@ -177,7 +174,6 @@ export default class ReactionService implements ReactionRepository {
 
             await connection.closeConnection();
         } catch (error) {
-            LogError(error, "model");
             throw error;
         }
     }
@@ -218,7 +214,6 @@ export default class ReactionService implements ReactionRepository {
             }
             await connection.closeConnection();
         } catch (error) {
-            LogError(error, "model");
             throw error;
         }
     }

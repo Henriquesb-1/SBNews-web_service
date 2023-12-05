@@ -27,7 +27,7 @@ export default class NewsController {
                 res.status(204).send();
             }
         } catch (error) {
-            LogError(error, "controller");
+            LogError(error);
             res.status(500).send();
         }
     }
@@ -113,7 +113,7 @@ export default class NewsController {
             } else return res.status(400).send();
 
         } catch (error) {
-            LogError(error, "controller");
+            LogError(error);
             return res.status(500).send();
         }
     }

@@ -26,7 +26,7 @@ export default class CategoryController {
                 res.status(204).send();
             }
         } catch (error: any) {
-            LogError(error, "controller");
+            LogError(error);
             res.status(500).send();
         }
     }
@@ -49,7 +49,7 @@ export default class CategoryController {
             }
         } catch (error) {
             console.log(error);
-            LogError(error, "controller");
+            LogError(error);
             return res.status(500).send();
         }
 
@@ -69,7 +69,7 @@ export default class CategoryController {
                 res.status(204).send();
             }
         } catch (error) {
-            LogError(error, "controller");
+            LogError(error);
             res.status(500).send();
         }
     }

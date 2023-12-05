@@ -3,7 +3,6 @@ import Category from "../entities/Category";
 import User from "../entities/User";
 import CategoryRepository from "../repository/CategoryRepository";
 import Connection from "../utils/Connection";
-import LogError from "../utils/LogError";
 import getNecessariesPages from "../utils/Paginator";
 
 export default class CategoryService implements CategoryRepository {
@@ -31,7 +30,6 @@ export default class CategoryService implements CategoryRepository {
                 throw error;
             }
         } catch (error) {
-            LogError(error, "model");
             throw error;
         }
     }
@@ -55,7 +53,6 @@ export default class CategoryService implements CategoryRepository {
             }
         } catch (error) {
             console.log(error);
-            LogError(error, "model");
             throw error;
         }
     }
@@ -76,7 +73,6 @@ export default class CategoryService implements CategoryRepository {
                 throw error;
             }
         } catch (error) {
-            LogError(error, "model");
             throw error;
         }
     }
@@ -101,7 +97,6 @@ export default class CategoryService implements CategoryRepository {
 
         } catch (error) {
             console.log(error);
-            LogError(error, "model");
             throw error;
         }
     }
@@ -128,7 +123,6 @@ export default class CategoryService implements CategoryRepository {
                 throw error;
             }
         } catch (error) {
-            LogError(error, "model");
             throw error;
         }
     }

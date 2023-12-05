@@ -1,7 +1,6 @@
 import Notification from "../entities/Notification";
 import NotificationRepository from "../repository/NotificationRepository";
 import Connection from "../utils/Connection";
-import LogError from "../utils/LogError";
 import getNecessariesPages from "../utils/Paginator";
 
 export default class NotificationService implements NotificationRepository {
@@ -66,7 +65,6 @@ export default class NotificationService implements NotificationRepository {
             }
 
         } catch (error) {
-            LogError(error, "model");
             throw error;
         }
     }
@@ -98,7 +96,6 @@ export default class NotificationService implements NotificationRepository {
 
             await connection.closeConnection();
         } catch (error) {
-            LogError(error, "model");
             throw error;
         }
     }
@@ -109,7 +106,6 @@ export default class NotificationService implements NotificationRepository {
             await connection.query("UPDATE user_notification SET hasBeenRead = true WHERE id = ?", [notification.id]);
             await connection.closeConnection();
         } catch (error) {
-            LogError(error, "model");
             throw error;
         }
     }
@@ -122,7 +118,6 @@ export default class NotificationService implements NotificationRepository {
 
             await connection.closeConnection();
         } catch (error) {
-            LogError(error, "model");
             throw error;
         }
     }

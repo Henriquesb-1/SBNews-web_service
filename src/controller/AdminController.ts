@@ -21,7 +21,7 @@ export default class AdminConfig {
             fs.writeFileSync(path.resolve() + "/src/.adminConfig.json", JSON.stringify(newConfig));
             res.status(204).send();
         } catch (error) {
-            LogError(error, "controller");
+            LogError(error);
             res.status(500).send();
         }
     }

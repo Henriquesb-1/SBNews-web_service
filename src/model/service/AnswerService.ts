@@ -3,7 +3,6 @@ import Notification from "../entities/Notification";
 import AnswerRepository from "../repository/AnswerRepository";
 import NotificationRepository from "../repository/NotificationRepository";
 import Connection from "../utils/Connection";
-import LogError from "../utils/LogError";
 import renderDate from "../utils/parseDate";
 import NotificationService from "./NotificationService";
 
@@ -60,7 +59,6 @@ export default class AnswerService implements AnswerRepository {
             }
         } catch (error) {
             console.log(error);
-            LogError(error, "model");
             throw error;
         }
     }
@@ -78,7 +76,6 @@ export default class AnswerService implements AnswerRepository {
                 throw error;
             }
         } catch (error) {
-            LogError(error, "model");
             throw error;
         }
     }
@@ -127,7 +124,6 @@ export default class AnswerService implements AnswerRepository {
 
             return { data: answers }
         } catch (error) {
-            LogError(error, "model");
             throw error;
         }
     }
@@ -145,13 +141,12 @@ export default class AnswerService implements AnswerRepository {
                 connection.transaction("commit");
             } catch (error) {
                 await connection.transaction("rollback");
-                LogError(error, "model");
+
                 throw error;
             };
 
             await connection.closeConnection();
         } catch (error) {
-            LogError(error, "model");
         }
 
     }

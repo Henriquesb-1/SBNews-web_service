@@ -3,7 +3,6 @@ import User from "../entities/User";
 import UserBuilder from "../entities/builders/UserBuilder";
 import ReportRepository from "../repository/ReportRepository";
 import Connection from "../utils/Connection";
-import LogError from "../utils/LogError";
 import getNecessariesPages from "../utils/Paginator";
 import GetTotals from "./GetTotals";
 
@@ -53,7 +52,6 @@ export default class ReportService implements ReportRepository {
                 pages
             }
         } catch (error) {
-            LogError(error, "model");
             throw error;
         }
     }
@@ -139,7 +137,6 @@ export default class ReportService implements ReportRepository {
             await connection.query(`DELETE FROM reports WHERE id = ?`, [id]);
             await connection.closeConnection();
         } catch (error) {
-            LogError(error, "model");
             throw error;
         }
     }
