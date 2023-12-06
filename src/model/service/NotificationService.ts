@@ -1,7 +1,6 @@
 import Notification from "../entities/Notification";
 import NotificationRepository from "../repository/NotificationRepository";
 import Connection from "../utils/Connection";
-import getNecessariesPages from "../utils/Paginator";
 
 export default class NotificationService implements NotificationRepository {
 
@@ -9,11 +8,11 @@ export default class NotificationService implements NotificationRepository {
         return 0;
     }
 
-    public async get(page: number, userId: string): Promise<{ data: Notification[]; total?: number | undefined; pages?: number | undefined; }> {
+    public async get(page: number, userName: string): Promise<{ data: Notification[]; total?: number | undefined; }> {
         try {
             const connection = new Connection();
 
-            const totalNotification = await connection.query("SELECT COUNT(id) as Total FROM user_notification WHERE user_target = ? AND hasBeenRead = false", [userId]);
+            const totalNotification = await connection.query("SELECT COUNT(id) as Total FROM user_notification WHERE user_target = (SELECT id FROM users WHERE name = ?)", [userName]);
             const [total] = totalNotification.map((notification: { Total: number }) => notification.Total);
 
             let data = <Notification[]>await connection.query(`
@@ -27,12 +26,12 @@ export default class NotificationService implements NotificationRepository {
                     users causedBy,
                     users userTarget
                 WHERE 
-                    notification.user_target = ? 
+                    notification.user_target = (SELECT id FROM users WHERE name = ?)
                     AND causedBy.id = notification.caused_by
                     AND userTarget.id = notification.user_target
                 LIMIT 10
                 OFFSET ?
-            `, [userId, (page * 10 - 10)]);
+            `, [userName, (page * 10 - 10)]);
 
             await connection.closeConnection();
 
@@ -56,11 +55,8 @@ export default class NotificationService implements NotificationRepository {
                 };
             })
 
-            const pages = getNecessariesPages(total, 5);
-
             return {
                 data,
-                pages,
                 total
             }
 

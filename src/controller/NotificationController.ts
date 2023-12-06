@@ -14,11 +14,11 @@ export default class NotificationController {
 
     public async getNotifications(req: Request, res: Response): Promise<void> {
         const page = Number.parseInt(<string>req.query.page || "1");
-        const userId = <string>req.query.userId;
+        const name = <string>req.query.name;
 
         try {
-            const { data, pages, total } = await this.notificationRepository.get(page, userId);
-            res.status(200).json({ data, pages, total });
+            const { data, total } = await this.notificationRepository.get(page, name);
+            res.status(200).json({ data, total });
         } catch (error) {
             LogError(error);
             res.status(500).send();
