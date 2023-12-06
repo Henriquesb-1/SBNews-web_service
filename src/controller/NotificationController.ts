@@ -50,10 +50,11 @@ export default class NotificationController {
     }
 
     public async setNotificationRead(req: Request, res: Response): Promise<void> {
-        const notification: Notification = { ...req.body };
+        const notification: Notification | Notification[] = req.body;
 
         try {
-            await this.notificationRepository.update(notification);
+            if(notification.constructor === Array) await this.notificationRepository.setAllRead(<Notification[]>notification)
+            else await this.notificationRepository.update(<Notification>notification);
             res.status(204).send();
         } catch (error) {
             LogError(error);

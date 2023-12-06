@@ -117,4 +117,14 @@ export default class NotificationService implements NotificationRepository {
             throw error;
         }
     }
+
+    public async setAllRead(notifications: Notification[]): Promise<void> {
+        try {
+            const connection = new Connection();
+            notifications.forEach(async notification => await connection.query("UPDATE user_notification SET hasBeenRead = true WHERE id = ?", [notification.id]))
+            await connection.closeConnection();
+        } catch (error) {
+            throw error;
+        }
+    }
 }
