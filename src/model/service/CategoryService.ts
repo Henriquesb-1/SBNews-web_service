@@ -107,14 +107,26 @@ export default class CategoryService implements CategoryRepository {
 
             try {
                 const hasChildCategoryCreatedByOtherUser = <{createdBy: number}[]> await connection.query("SELECT created_by as createdBy FROM category WHERE parent_id = ? AND NOT created_by = ?", [param.id, param.userId]);
-                
+                const hasNewsRegister = <{total: number}[]> await connection.query("SELECT COUNT(id) as total FROM news WHERE category_id = ?", [param.id]);
+                const [totalNewsRegister] = hasNewsRegister.map(news => news.total);
+                const hasParentCategory = <{id: number, name: string}[]> await connection.query("SELECT id, name FROM category WHERE parent_id = ?", [param.id]);
+
                 if(hasChildCategoryCreatedByOtherUser.length > 0) {
                     const usersUsingParentCategory = <User[]> await connection.query("SELECT name FROM users WHERE id IN (?)", [hasChildCategoryCreatedByOtherUser.map(childCategory => childCategory.createdBy)])
                     let userNames = "";
 
                     usersUsingParentCategory.forEach(user => userNames += user.name);
                     
-                    return userNames;
+                    return `Erro ao excluir categoria, usuarios ${userNames} estão usando está categoria como raiz`;
+                } else if(totalNewsRegister > 0) {
+                    return `Erro ao excluir categoria, essa categoria possui ${totalNewsRegister} notícias registradas.`;
+                } else if(hasParentCategory.length > 0) {
+                    let categoryNames = "";
+                    hasParentCategory.forEach((category, index) => {
+                        index < hasParentCategory.length ? categoryNames += category.name + ", " : categoryNames += category.name;
+                    });
+
+                    return `Erro ao excluir categoria, categorias ${categoryNames} estão usando está categoria como raiz.`
                 } else {
                     await connection.query("DELETE FROM category WHERE id = ?", [param.id]);
                     return "";

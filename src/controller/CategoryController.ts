@@ -61,10 +61,10 @@ export default class CategoryController {
         const userId = <string>req.params.userId;
 
         try {
-            const userNames = await this.categoryRepository.delete({id, userId});
+            const deleteErrorMessage = await this.categoryRepository.delete({id, userId});
 
-            if(userNames) {
-                res.status(500).send(`Erro ao excluir categoria, usuarios ${userNames} estão usando está categoria como raiz`);
+            if(deleteErrorMessage) {
+                res.status(500).send(deleteErrorMessage);
             } else {
                 res.status(204).send();
             }
