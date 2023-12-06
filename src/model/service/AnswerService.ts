@@ -109,7 +109,7 @@ export default class AnswerService implements AnswerRepository {
                 WHERE 
                     answers.comment_id = ? 
                     AND users.id = answers.author_id
-                ORDER BY answers.agree_count DESC
+                ORDER BY date_posted ASC
                 LIMIT ?
                 OFFSET ?
             `, [commentId, this.limit, (page * this.limit - this.limit)]);
