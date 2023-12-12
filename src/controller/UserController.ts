@@ -80,7 +80,7 @@ export default class UserController {
 
     public async updateUserProfile(req: Request, res: Response): Promise<Response> {
         const user: User = { ...req.body };
-        const u = "A";
+
         try {
             const password = await this.userRepository.getUserPassword(user.id);
 
