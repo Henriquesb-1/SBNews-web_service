@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "pm2 start ./build/src/index.js --name sbNews-web_service",
+    "start": "pm2 start ./build/src/index.js --name --watch sbNews-web_service",
     "dev": "npx nodemon",
+    "restart": "pm2 restart",
     "build": "npx tsc",
+    "status": "pm2 status",
     "stop": "pm2 stop all",
     "test": "jest"
   },
