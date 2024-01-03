@@ -18,7 +18,6 @@ export default class CategoryController {
         try {
             if (req.method === "POST") {
                 await this.categoryRepository.save(category);
-                console.log(category);
                 res.status(204).send();
             } else if (req.method === "PUT") {
                 if(!category.id) throw new Error("Id cannot be undefined");
