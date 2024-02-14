@@ -1,4 +1,4 @@
-export default function renderDate(date: any) {
+export default function parseDate(date: any) {
     const months = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
 
     date = new Date(`${date}`).toLocaleDateString("pt-br");
