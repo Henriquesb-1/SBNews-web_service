@@ -1,10 +1,11 @@
 import User from "../User";
+import UserType from "../UserType";
 
 export default class UserBuilder {
     private id: number = 0;
     private name: string = "";
     private email: string = "";
-    private userType: string = "";
+    private userType: UserType = UserType.NORMAL;
     private imageUrl: string = "";
     private joinIn: string = "";
     private password: string = "";
@@ -31,7 +32,7 @@ export default class UserBuilder {
     }
 
 
-    public addUserType(userType: string): UserBuilder {
+    public addUserType(userType: UserType): UserBuilder {
         this.userType = userType;
         return this;
     }

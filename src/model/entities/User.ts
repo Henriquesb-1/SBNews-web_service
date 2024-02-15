@@ -2,6 +2,7 @@ import AdminConfig from "./AdminConfig";
 
 import fs from "fs";
 import path from "path";
+import UserType from "./UserType";
 
 const adminConfig: AdminConfig = JSON.parse(fs.readFileSync(path.resolve() + "/src/.adminConfig.json").toString());
 const now = Math.floor(Date.now() / 1000);
@@ -10,7 +11,7 @@ export default class User {
     readonly id: number = 0;
     readonly name: string = "";
     readonly email: string = "";
-    readonly userType: string = "";
+    readonly userType: UserType = UserType.NORMAL;
 
     private _imageUrl: string = "";
     private _joinIn: string = "";
@@ -26,7 +27,7 @@ export default class User {
 
     private _feedBack = "";
 
-    constructor(id: number, name: string, email: string, userType: string, imageUrl: string, joinIn: string, password: string, mutedTime: number, timesSilenced: number, warnedTimes: number, isBanned: boolean) {
+    constructor(id: number, name: string, email: string, userType: UserType, imageUrl: string, joinIn: string, password: string, mutedTime: number, timesSilenced: number, warnedTimes: number, isBanned: boolean) {
         this.id = id;
         this.name = name;
         this.email = email;
