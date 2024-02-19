@@ -28,13 +28,12 @@ export default class UserService implements UserRepository {
             const connection = new Connection();
 
             await connection.query(`
-                INSERT INTO users(name, email, password, image_url, join_in)
+                INSERT INTO users(name, email, password, avatar, join_in)
                 VALUES(?, ?, ?, ?, ?)
-            `, [user.name, user.email, user.password, user.imageUrl, user.joinIn]);
+            `, [user.name, user.email, user.password, user.avatar, user.joinIn]);
 
             await connection.closeConnection();
         } catch (error) {
-            console.log(error)
             throw error;
         }
     }
@@ -68,7 +67,7 @@ export default class UserService implements UserRepository {
     }
 
     public async updateUserProfile(user: User): Promise<void> {
-        const { name, email, imageUrl, newPassword, id }: User = user;
+        const { name, email, avatar, newPassword, id }: User = user;
 
         try {
             const connection = new Connection();
@@ -76,15 +75,15 @@ export default class UserService implements UserRepository {
             if (newPassword) {
                 await connection.query(`
                     UPDATE users
-                    SET name = ?, email = ?, password = ?, image_url = ?
+                    SET name = ?, email = ?, password = ?, avatar = ?
                     WHERE id = ?
-                `, [name, email, newPassword, imageUrl, id]);
+                `, [name, email, newPassword, avatar, id]);
             } else {
                 await connection.query(`
                     UPDATE users
-                    SET name = ?, email = ?, image_url = ?
+                    SET name = ?, email = ?, avatar = ?
                     WHERE id = ?
-                `, [name, email, imageUrl, id]);
+                `, [name, email, avatar, id]);
             }
 
             await connection.closeConnection();
@@ -109,7 +108,7 @@ export default class UserService implements UserRepository {
             const connection = new Connection();
 
             const userFromDb = <User[]>await connection.query(`
-                SELECT id, name, email, password, image_url as imageUrl, user_type as userType, muted_time as mutedTime, times_silenced as timesSilenced, isBanned
+                SELECT id, name, email, password, avatar, user_type as userType, muted_time as mutedTime, times_silenced as timesSilenced, isBanned
                 FROM users
                 WHERE name = ?
             `, [userName]);
@@ -186,7 +185,7 @@ export default class UserService implements UserRepository {
             `, [name, name]);
 
             const userQuery = <User[]>await connection.query(`
-                SELECT id, name, email, image_url as imageUrl, join_in as joinIn
+                SELECT id, name, email, avatar, join_in as joinIn
                 FROM users
                 WHERE name = ?
             `, [name]);
@@ -196,6 +195,7 @@ export default class UserService implements UserRepository {
             const [reactionsCount] = totalCommentsReactionsQuery.map((reactions: any) => reactions);
             const { commentsAgree, answersAgree } = reactionsCount;
 
+            user.avatar = `http://localhost:3001/userAvatar/${user.avatar}`;
             user.joinIn = renderDate(user.joinIn);
 
             return {

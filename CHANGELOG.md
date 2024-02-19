@@ -16,3 +16,9 @@ Initial Release. Features:
 Code refactoring. Changes:
 
 *   Changed user type identification from string to enum, saved in database as a int value
+
+
+1.1.1
+=====
+
+Code refactoring.

@@ -9,7 +9,7 @@ export default class Auth {
         const payload = {
             id: user.id,
             name: user.name,
-            imageUrl: user.imageUrl,
+            avatar: `http://localhost:3001/userAvatar/${user.avatar}`,
             userType: user.userType,
             isMuted: user.mutedTime > now,
             exp: now + (60 * 60 * 24 * 3) //3 Dias;

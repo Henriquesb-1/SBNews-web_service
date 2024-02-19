@@ -13,7 +13,7 @@ export default class User {
     readonly email: string = "";
     readonly userType: UserType = UserType.NORMAL;
 
-    private _imageUrl: string = "";
+    private _avatar: string = "";
     private _joinIn: string = "";
     private _password: string = "";
     private _mutedTime: number;
@@ -27,12 +27,12 @@ export default class User {
 
     private _feedBack = "";
 
-    constructor(id: number, name: string, email: string, userType: UserType, imageUrl: string, joinIn: string, password: string, mutedTime: number, timesSilenced: number, warnedTimes: number, isBanned: boolean) {
+    constructor(id: number, name: string, email: string, userType: UserType, avatar: string, joinIn: string, password: string, mutedTime: number, timesSilenced: number, warnedTimes: number, isBanned: boolean) {
         this.id = id;
         this.name = name;
         this.email = email;
         this.userType = userType;
-        this.imageUrl = imageUrl;
+        this._avatar = avatar;
         this._joinIn = joinIn;
         this._password = password;
         this._mutedTime = mutedTime;
@@ -124,12 +124,12 @@ export default class User {
         this._password = password;
     }
 
-    get imageUrl() {
-        return this._imageUrl || "";
+    get avatar() {
+        return this._avatar || "";
     }
 
-    set imageUrl(imageUrl: string) {
-        this._imageUrl = imageUrl;
+    set avatar(avatar: string) {
+        this._avatar = avatar;
     }
 
     public advertUser(): void {

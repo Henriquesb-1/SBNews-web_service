@@ -6,7 +6,7 @@ export default class UserBuilder {
     private name: string = "";
     private email: string = "";
     private userType: UserType = UserType.NORMAL;
-    private imageUrl: string = "";
+    private avatar: string = "";
     private joinIn: string = "";
     private password: string = "";
     private mutedTime: number = 0;
@@ -37,8 +37,8 @@ export default class UserBuilder {
         return this;
     }
 
-    public addImageUrl(imageUrl: string): UserBuilder {
-        this.imageUrl = imageUrl;
+    public addAvatar(avatar: string): UserBuilder {
+        this.avatar = avatar;
         return this;
     }
 
@@ -73,11 +73,11 @@ export default class UserBuilder {
     }
 
     public buildUser(): User {
-        return new User(this.id, this.name, this.email, this.userType, this.imageUrl, this.joinIn, this.password, this.mutedTime, this.timesSilenced, this.warnedTimes, this.isBanned);
+        return new User(this.id, this.name, this.email, this.userType, this.avatar, this.joinIn, this.password, this.mutedTime, this.timesSilenced, this.warnedTimes, this.isBanned);
     }
 
     public static buildBlankUser() {
-        const { id, name, email, userType, imageUrl, joinIn, password, mutedTime, timesSilenced, warnedTimes, isBanned } = new UserBuilder().buildUser();
-        return new User(id, name, email, userType, imageUrl, joinIn, password, mutedTime, timesSilenced, warnedTimes, isBanned);
+        const { id, name, email, userType, avatar, joinIn, password, mutedTime, timesSilenced, warnedTimes, isBanned } = new UserBuilder().buildUser();
+        return new User(id, name, email, userType, avatar, joinIn, password, mutedTime, timesSilenced, warnedTimes, isBanned);
     }
 }

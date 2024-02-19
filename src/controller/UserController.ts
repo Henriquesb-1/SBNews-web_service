@@ -54,11 +54,7 @@ export default class UserController {
                 return res.status(400).send("Usuário ja cadastrado");
             } else {
                 user.password = Password.hashPassword(user.password);
-
-                if (!user.imageUrl) user.imageUrl = "http://localhost:3001/userAvatar/default-avatar.png";
-
                 await this.userRepository.save(user);
-
                 return res.status(204).send();
             }
         } catch (error) {
