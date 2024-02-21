@@ -103,7 +103,7 @@ export default class AnswerService implements AnswerRepository {
             const answersQuery = await connection.query(`
                 SELECT 
                     answers.id as answerId, answers.content as content, answers.comment_id as commentId, answers.date_posted as datePosted, answers.agree_count as agreeCount, answers.disagree_count as disagreeCount,
-                    users.id as authorId, users.name as authorName, users.image_url as authorAvatarUrl
+                    users.id as authorId, users.name as authorName, users.avatar
                 FROM 
                     users, answers
                 WHERE 
@@ -117,7 +117,7 @@ export default class AnswerService implements AnswerRepository {
             await connection.closeConnection();
 
             const answers = answersQuery.map((answer: any) => {
-                const author = { id: answer.authorId, name: answer.authorName, imageUrl: answer.authorAvatarUrl };
+                const author = { id: answer.authorId, name: answer.authorName, imageUrl: `http:/localhost:3001/userAvatar/${answer.avatar}` };
                 const reactions = { agreeCount: answer.agreeCount, disagreeCount: answer.disagreeCount };
                 return new Answer(answer.content, answer.answerId, answer.commentId, author, renderDate(answer.datePosted), reactions);
             })

@@ -61,7 +61,7 @@ export default class CommentService implements CommentRepository {
             const commentsQuery = <Comment[]>await connection.query(`
                     SELECT 
                         comments.id as commentId, comments.content as content, comments.date_posted as datePosted, comments.agree_count as agreeCount, comments.disagree_count as disagreeCount,
-                        users.id as authorId, users.name as authorName, users.image_url as authorAvatarUrl
+                        users.id as authorId, users.name as authorName, users.avatar
                     FROM 
                         comments, users
                     WHERE 
@@ -75,7 +75,7 @@ export default class CommentService implements CommentRepository {
             await connection.closeConnection();
 
             const comments = commentsQuery.map((comment: any) => {
-                const author = { id: comment.authorId, name: comment.authorName, imageUrl: comment.authorAvatarUrl }
+                const author = { id: comment.authorId, name: comment.authorName, imageUrl: `http:/localhost:3001/userAvatar/${comment.avatar}` }
                 const reactions = { agreeCount: comment.agreeCount, disagreeCount: comment.disagreeCount }
                 return new Comment(comment.content, renderDate(comment.datePosted), comment.newsId, comment.commentId, author, reactions);
             })
