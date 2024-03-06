@@ -48,7 +48,7 @@ export default class NewsController {
         const filter = <string>req.query.filter || "all";
 
         try {
-            const reject = () => res.status(400).send();
+            const reject = (reason?: string) => res.status(400).send(reason);
 
             if (filter === "all") {
                 const { data, pages, total } = await this.newsRepository.get(page);
@@ -62,7 +62,7 @@ export default class NewsController {
                 const newsId = <string>req.query.newsId;
                 const categoryId = <string>req.query.categoryId;
 
-                if (!newsId || !categoryId) return reject();
+                if (!newsId || !categoryId) return reject("News or category id was not informed");
 
                 const relatedNews = await this.newsRepository.getRelatedNews(categoryId, newsId);
                 return res.status(200).json(relatedNews);
@@ -70,7 +70,7 @@ export default class NewsController {
             } else if (filter === "read") {
                 const title = <string>req.query.title;
 
-                if (!title) return reject();
+                if (!title) return reject("Title was not informed");
 
                 const newsToRead = await this.newsRepository.getReadContent(title);
                 return res.status(200).json(newsToRead);
@@ -78,14 +78,14 @@ export default class NewsController {
             } else if (filter === "author") {
                 const id = <string>req.query.id;
 
-                if (!id) return reject();
+                if (!id) return reject("Author id was not informed");
 
                 const { data, pages, total } = await this.newsRepository.getNewsByAuthor(page, id);
                 return res.status(200).json({ data, pages, total });
 
             } else if (filter === "category") {
                 const name = <string>req.query.name;
-                if (!name) return reject();
+                if (!name) return reject("Category name was not informed");
 
                 const { data, pages, total } = await this.newsRepository.getNewsByCategory(page, name);
                 return res.status(200).json({ data, pages, total });
@@ -96,7 +96,7 @@ export default class NewsController {
 
             } else if(filter === "search") {
                 const title = <string>req.query.title;
-                if(!title) return reject();
+                if(!title) return reject("Title was not informed");
 
                 const { data, pages, total } = await this.newsRepository.getByTitle(title, page);
                 return res.status(200).json({data, pages, total});
@@ -105,7 +105,7 @@ export default class NewsController {
                 const title = <string>req.query.title || "";
                 const authorId = <string>req.query.authorId;
 
-                if(!authorId) return reject();
+                if(!authorId) return reject("Title or/and author id was not informed");
 
                 const { data, pages, total } = await this.newsRepository.getNewsByAuthorAndTitle(authorId, title, page);
                 return res.status(200).json({data, pages, total});
