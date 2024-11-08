@@ -2,7 +2,7 @@ import Notification from "../entities/Notification";
 import Reaction from "../entities/Reaction";
 import NotificationRepository from "../repository/NotificationRepository";
 import ReactionRepository from "../repository/ReactionRepository";
-import Connection from "../utils/Connection";
+import Connection from "./Connection";
 import NotificationService from "./NotificationService";
 
 export default class ReactionService implements ReactionRepository {

@@ -1,6 +1,6 @@
 import Notification from "../entities/Notification";
 import NotificationRepository from "../repository/NotificationRepository";
-import Connection from "../utils/Connection";
+import Connection from "./Connection";
 
 export default class NotificationService implements NotificationRepository {
 

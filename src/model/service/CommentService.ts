@@ -1,6 +1,6 @@
 import Comment from "../entities/Comment";
 import CommentRepository from "../repository/CommentRepository";
-import Connection from "../utils/Connection";
+import Connection from "./Connection";
 import renderDate from "../utils/parseDate";
 
 export default class CommentService implements CommentRepository {

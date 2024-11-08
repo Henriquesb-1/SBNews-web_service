@@ -1,6 +1,6 @@
 import News from "../entities/News";
 import StatsRepository from "../repository/StatsRepository";
-import Connection from "../utils/Connection";
+import Connection from "./Connection";
 
 export default class StatsService implements StatsRepository {
 

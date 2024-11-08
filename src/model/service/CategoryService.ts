@@ -2,7 +2,7 @@ import { CategoryReturnTypes } from "../Types";
 import Category from "../entities/Category";
 import User from "../entities/User";
 import CategoryRepository from "../repository/CategoryRepository";
-import Connection from "../utils/Connection";
+import Connection from "./Connection";
 import getNecessariesPages from "../utils/Paginator";
 
 export default class CategoryService implements CategoryRepository {

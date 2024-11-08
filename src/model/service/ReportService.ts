@@ -2,7 +2,7 @@ import Report from "../entities/Report";
 import User from "../entities/User";
 import UserBuilder from "../entities/builders/UserBuilder";
 import ReportRepository from "../repository/ReportRepository";
-import Connection from "../utils/Connection";
+import Connection from "./Connection";
 import getNecessariesPages from "../utils/Paginator";
 import GetTotals from "./GetTotals";
 

@@ -1,7 +1,7 @@
 import User from "../entities/User";
 import UserBuilder from "../entities/builders/UserBuilder";
 import UserRepository from "../repository/UserRepository";
-import Connection from "../utils/Connection";
+import Connection from "./Connection";
 import getNecessariesPages from "../utils/Paginator";
 import renderDate from "../utils/parseDate";
 

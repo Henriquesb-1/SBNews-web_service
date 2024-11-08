@@ -1,5 +1,5 @@
 import { ExtractJwt, Strategy } from "passport-jwt";
-import Connection from "../model/utils/Connection";
+import Connection from "../model/service/Connection";
 import passport from "passport";
 
 export default function authenticate() {

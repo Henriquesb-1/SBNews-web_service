@@ -1,4 +1,4 @@
-import Connection from "../utils/Connection";
+import Connection from "./Connection";
 import NewsRepository from "../repository/NewsRepository";
 import News from "../entities/News";
 import getNecessariesPages from "../utils/Paginator";

@@ -1,4 +1,4 @@
-import Connection from "../utils/Connection";
+import Connection from "./Connection";
 
 export default abstract class GetTotals {
 

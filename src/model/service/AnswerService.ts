@@ -2,7 +2,7 @@ import Answer from "../entities/Answer";
 import Notification from "../entities/Notification";
 import AnswerRepository from "../repository/AnswerRepository";
 import NotificationRepository from "../repository/NotificationRepository";
-import Connection from "../utils/Connection";
+import Connection from "./Connection";
 import renderDate from "../utils/parseDate";
 import NotificationService from "./NotificationService";
 
