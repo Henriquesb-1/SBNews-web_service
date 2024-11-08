@@ -4,6 +4,7 @@ import NotificationRepository from "../repository/NotificationRepository";
 import ReactionRepository from "../repository/ReactionRepository";
 import Connection from "./Connection";
 import NotificationService from "./NotificationService";
+import TransactionStatus from "./TransationStatus";
 
 export default class ReactionService implements ReactionRepository {
     private notificationRepository: NotificationRepository;
@@ -74,7 +75,7 @@ export default class ReactionService implements ReactionRepository {
         try {
             let connection = new Connection();
 
-            await connection.transaction("begin");
+            await connection.transaction(TransactionStatus.BEGIN);
 
             try {
                 if (type === "comment") {
@@ -114,11 +115,11 @@ export default class ReactionService implements ReactionRepository {
                     await this.notificationRepository.save(notification);
                 }
 
-                await connection.transaction("commit");
+                await connection.transaction(TransactionStatus.COMMIT);
 
             } catch (error) {
                 console.log(error);
-                await connection.transaction("rollback");
+                await connection.transaction(TransactionStatus.ROLLBACK);
                 throw error;
             }
             await connection.closeConnection();
@@ -133,7 +134,7 @@ export default class ReactionService implements ReactionRepository {
         try {
             let connection = new Connection();
 
-            await connection.transaction("begin");
+            await connection.transaction(TransactionStatus.BEGIN);
 
             try {
                 if (type === "comment") {
@@ -166,9 +167,9 @@ export default class ReactionService implements ReactionRepository {
                 // }
 
                 // await this.notificationRepository.save(notification);
-                await connection.transaction("commit");
+                await connection.transaction(TransactionStatus.COMMIT);
             } catch (error) {
-                await connection.transaction("rollback");
+                await connection.transaction(TransactionStatus.ROLLBACK);
                 throw error;
             }
 
@@ -186,7 +187,7 @@ export default class ReactionService implements ReactionRepository {
         try {
             const connection = new Connection();
 
-            await connection.transaction("begin");
+            await connection.transaction(TransactionStatus.BEGIN);
 
             try {
                 if (type === "comment") {
@@ -205,11 +206,11 @@ export default class ReactionService implements ReactionRepository {
                     await this.updateReactionCount(connection, agreeCount, disagreeCount, reaction.commentId, "answer");
                 }
 
-                await connection.transaction("commit");
+                await connection.transaction(TransactionStatus.COMMIT);
 
                 await connection.closeConnection();
             } catch (error) {
-                await connection.transaction("rollback");
+                await connection.transaction(TransactionStatus.ROLLBACK);
                 throw error;
             }
             await connection.closeConnection();

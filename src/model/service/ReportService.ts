@@ -5,6 +5,7 @@ import ReportRepository from "../repository/ReportRepository";
 import Connection from "./Connection";
 import getNecessariesPages from "../utils/Paginator";
 import GetTotals from "./GetTotals";
+import TransactionStatus from "./TransationStatus";
 
 export default class ReportService implements ReportRepository {
 
@@ -88,7 +89,7 @@ export default class ReportService implements ReportRepository {
 
 
             const connection = new Connection();
-            await connection.transaction("begin");
+            await connection.transaction(TransactionStatus.BEGIN);
 
             try {
                 if (willDeleteContent) {
@@ -113,12 +114,12 @@ export default class ReportService implements ReportRepository {
 
                 await connection.query(`DELETE FROM reports WHERE id = ?`, [report.id]);
 
-                await connection.transaction("commit");
+                await connection.transaction(TransactionStatus.COMMIT);
                 await connection.closeConnection();
 
                 return user.feedBack;
             } catch (error) {
-                await connection.transaction("rollback");
+                await connection.transaction(TransactionStatus.ROLLBACK);
                 throw error;
             }
         } catch (error) {

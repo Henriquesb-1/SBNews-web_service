@@ -5,6 +5,7 @@ import NotificationRepository from "../repository/NotificationRepository";
 import Connection from "./Connection";
 import renderDate from "../utils/parseDate";
 import NotificationService from "./NotificationService";
+import TransactionStatus from "./TransationStatus";
 
 export default class AnswerService implements AnswerRepository {
     private notificationRepository: NotificationRepository;
@@ -132,15 +133,15 @@ export default class AnswerService implements AnswerRepository {
         try {
             const connection = new Connection();
 
-            await connection.transaction("begin");
+            await connection.transaction(TransactionStatus.BEGIN);
 
             try {
                 await connection.query(`DELETE FROM answers_reactions WHERE answer_id = ?`, [id]);
                 await connection.query(`DELETE FROM answers WHERE id = ?`, [id]);
 
-                connection.transaction("commit");
+                connection.transaction(TransactionStatus.COMMIT);
             } catch (error) {
-                await connection.transaction("rollback");
+                await connection.transaction(TransactionStatus.ROLLBACK);
 
                 throw error;
             };

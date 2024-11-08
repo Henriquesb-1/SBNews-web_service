@@ -1,4 +1,5 @@
 import mySql, { RowDataPacket } from "mysql2/promise";
+import TransactionStatus from "./TransationStatus";
 
 export default class Connection {
     #connection: Promise<mySql.Connection>;
@@ -35,10 +36,23 @@ export default class Connection {
         }
     }
 
-    public async transaction(status: string) {
-        if(status === "begin") (await this.#connection).beginTransaction();
-        else if(status === "commit") (await this.#connection).commit();
-        else if(status === "rollback") (await this.#connection).rollback();
+    public async transaction(status: TransactionStatus) {
+        switch (status) {
+            case TransactionStatus.BEGIN:
+                (await this.#connection).beginTransaction();
+            break;
+
+            case TransactionStatus.COMMIT:
+                (await this.#connection).commit();
+            break;
+
+            case TransactionStatus.ROLLBACK:
+                (await this.#connection).rollback();
+            break;
+        
+            default:
+                throw new Error("Transation not valid");
+        }
     }
     
     public async closeConnection() {

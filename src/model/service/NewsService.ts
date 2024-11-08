@@ -4,6 +4,7 @@ import News from "../entities/News";
 import getNecessariesPages from "../utils/Paginator";
 import renderDate from "../utils/parseDate";
 import { NewsReturnTypes } from "../Types";
+import TransactionStatus from "./TransationStatus";
 
 export default class NewsService implements NewsRepository {
 
@@ -54,16 +55,16 @@ export default class NewsService implements NewsRepository {
         try {
             const connection = new Connection();
 
-            await connection.transaction("begin");
+            await connection.transaction(TransactionStatus.BEGIN);
 
             const date = new Date();
 
             try {
                 // await connection.query("DELETE FROM news WHERE id = ?", [id]);
                 await connection.query("UPDATE news SET deleted_at = ? WHERE id = ?", [`${date.getFullYear()}-${date.getMonth()}-${date.getDate()}`, id]);
-                await connection.transaction("commit");
+                await connection.transaction(TransactionStatus.COMMIT);
             } catch (error) {
-                await connection.transaction("roolback");
+                await connection.transaction(TransactionStatus.ROLLBACK);
                 throw error;
             }
 
