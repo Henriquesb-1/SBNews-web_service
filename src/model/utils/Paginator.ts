@@ -1,4 +1,2 @@
-export default function getNecessariesPages(total: number, limit: number) {
-    const pages = Math.ceil(total / limit);
-    return pages;
-};
+const getNecessariesPages = (total: number, limit: number) => Math.ceil(total / limit);
+export default getNecessariesPages;
